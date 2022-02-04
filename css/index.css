@@ -42,6 +42,7 @@ body {
 .containerImg {
   border-radius: 1.5rem;
   overflow: hidden;
+  cursor:pointer;
 }
 .view {
   position: absolute;
@@ -65,7 +66,7 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
-.containerImg:hover::before,  .view::after {
+.containerImg:hover::before,  .view:hover  {
   opacity: 0.6;
 
 }
@@ -122,4 +123,19 @@ strong {
 .footerContent > picture > p > span {
   color: var(--soft-blue);
   margin-left: 1rem;
+}
+@media(min-width:768px){
+  .card{
+    margin:3rem 10rem;
+  }
+}
+@media(min-width:1024px) {
+  .card{
+    margin:5rem 15rem;
+  }
+}
+@media(min-width:1440px) {
+  .card{
+    margin:5rem 30rem;
+  }
 }
